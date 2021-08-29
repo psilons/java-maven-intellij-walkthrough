@@ -157,5 +157,12 @@ To run the class, right mouse click anywhere and select run
 ![hello](docs/intellij-hello-world.png)
 
 ## GIT Commit
+To commit the change
+
+![commit1](docs/intellij-git-commit1.png)
+
+Then select all needed files
+
+![commit2](docs/intellij-git-commit2.png)
 
 ## Unit Testing
