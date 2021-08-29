@@ -217,3 +217,17 @@ The result is in target/test-coverage/index.html. More info can be found
 and
 [LambdaTest](https://www.lambdatest.com/blog/reporting-code-coverage-using-maven-and-jacoco-plugin/)
 
+## Note
+In general, we should keep the main as small as possible. If we can't avoid it,
+check these 2 links:
+- https://stefanbirkner.github.io/system-rules/
+- https://www.nathanbak.com/?p=388
+
+Good tutorial sites:
+- https://mkyong.com/
+- https://www.tutorialspoint.com/maven/index.htm
+
+References:
+- https://maven.apache.org/guides/mini/guide-multiple-repositories.html
+- https://stackoverflow.com/questions/3168319/how-to-specify-a-repository-for-a-dependency-in-maven
+
