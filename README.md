@@ -70,6 +70,17 @@ First, get the git link
 
 ![git](docs/git.png)
 
+Now modify the git link to embed user and token
+```
+https://<userid>:<token>@github.com/psilons/java-maven-intellij-walkthrough.git
+```
+
+If in any chance this is missing, we can reset it locally(run this in the project folder)
+```
+git remote set-url origin https://<userid>:<token>@github.com/psilons/java-maven-intellij-walkthrough.git
+```
+The token is generated from github.com, in the user | Settings | Developer settings | Personal access token.
+
 Then in a command window
 ```
 git clone <git link>
@@ -77,6 +88,8 @@ git status
 ```
 On Windows, we need [git command](https://git-scm.com/download/win) and 
 optionally [Tortoise GIT](https://tortoisegit.org/).
+
+
 
 Now our project home is: 
 ```
@@ -170,4 +183,37 @@ The commit is to local repo. In order to push to remote repo,
 ![push](docs/intellij-git-push.png)
 
 
-## Unit Testing
+## Unit Testing and Logging
+The JUnit lib in the pom.xml is old. The latest version can be found in
+[Maven Central](https://mvnrepository.com/). Search for JUnit and click on the
+latest version
+![junit1](docs/mvn-junit-version.png)
+![junit2](docs/mvn-junit-dep.png)
+
+Similarly, we could add logging lib and modify the code to use it.
+
+Finally, we add maven surefire plugin to run unit tests. Either right click
+the test Lifecycle in the Maven view on the right hand side, or fire off maven
+command from a command window.
+```
+mvn test 
+```
+
+## Test Coverage
+To run the test coverage in IntelliJ
+
+![intellij-test-coverage](docs/intellij-test-coverage.png)
+
+The result shows
+
+![intellij-test-coverage1](docs/intellij-test-coverage1.png)
+
+For Maven, we need to set up the jacoco plugin. To run the test coverage,
+```
+run clean verify
+```
+The result is in target/test-coverage/index.html. More info can be found
+[mkyong](https://mkyong.com/maven/maven-jacoco-code-coverage-example/)
+and
+[LambdaTest](https://www.lambdatest.com/blog/reporting-code-coverage-using-maven-and-jacoco-plugin/)
+
