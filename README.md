@@ -89,7 +89,7 @@ git status
 On Windows, we need [git command](https://git-scm.com/download/win) and 
 optionally [Tortoise GIT](https://tortoisegit.org/).
 
-
+Finally, add a .gitignore file to exclude target folder.
 
 Now our project home is: 
 ```
