@@ -165,4 +165,9 @@ Then select all needed files
 
 ![commit2](docs/intellij-git-commit2.png)
 
+The commit is to local repo. In order to push to remote repo,
+
+![push](docs/intellij-git-push.png)
+
+
 ## Unit Testing
